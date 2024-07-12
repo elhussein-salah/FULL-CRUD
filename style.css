@@ -1,0 +1,13 @@
+form{
+    margin-top: 91px;
+}
+form input[type="text"]{
+    width: 250px;
+    height: 45px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    outline: none;
+    display: inline-block;
+    margin-left: 100px !important;   
+}
