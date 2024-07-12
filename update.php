@@ -20,10 +20,8 @@
     endif;
 
 ?>
-<link rel="stylesheet" href="style.css">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-</head>
-<body>
+<?php include "header.php";?>
+
 <form action="update.php?upd_id=<?php echo $id ?>" method="post">
     <div class="mb-2 form-group mx-sm-3 ">
         <input type="text" class="form-control" name="task" id="" aria-describedby="helpId" value="<?php echo $row->name?>" placeholder="Enter Task"/>
@@ -31,9 +29,4 @@
         </div>
 </form>
 
-<?php
-    // $update = $conn->prepare("UPDATE task set name=:name WHERE id=:id");
-    // $update->execute(["name" => $row->name, "id" => $row->id]);
-    // header("Location: index.php");
-
-?>
+<?php include "footer.php";?>
